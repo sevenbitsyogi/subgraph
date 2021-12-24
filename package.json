@@ -1,0 +1,16 @@
+{
+  "name": "Spstgraph",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ sevenbitsyogi/Spstgraph",
+    "create-local": "graph create --node http://localhost:8020/ sevenbitsyogi/Spstgraph",
+    "remove-local": "graph remove --node http://localhost:8020/ sevenbitsyogi/Spstgraph",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 sevenbitsyogi/Spstgraph"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "^0.21.0",
+    "@graphprotocol/graph-ts": "^0.20.0"
+  }
+}
